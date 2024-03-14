@@ -1,0 +1,96 @@
+html {
+  background-color: black;
+}
+
+body {
+  background-color: black;
+  height: 100rem;
+}
+
+.main-container {
+  height: 50rem;
+  align-items: center;
+  background-color: black;
+  justify-content: center;
+}
+
+.main-container .image-container {
+  background: black;
+  height: 50rem;
+  position: static;
+  width: 100%;
+  z-index: 0;
+}
+
+.main-container h1 {
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 8rem;
+  text-transform: uppercase;
+  z-index: 1;
+  pointer-events: none;
+  position: relative;
+  bottom: 36rem;
+}
+
+.main-container h2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  bottom: 34rem;
+}
+
+.navbar {
+  height: 3rem;
+  background-color: black;
+  z-index: 1;
+  margin: 0px 50% 0px 20px;
+}
+
+.navbar .navbar-expand-sm {
+  height: 100%;
+  width: 100%;
+}
+
+.navbar-collapse {
+  height: 100%;
+  margin: 0px 50% 0px 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  transition: color 1s ease 0s, background-color 1s ease 0s;
+  height: 100%;
+}
+
+.navbar .nav-item {
+  height: 100%;
+  width: 50%;
+  margin: 0%;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: black;
+  background-color: white;
+}
+
+.navbar-brand {
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 5rem;
+  position: relative;
+  height: 60rem;
+  background-color: black;
+}
+
+.card-container .card {
+  position: relative;
+  height: 45rem;
+  top: 5rem;
+  left: 5rem;
+}
