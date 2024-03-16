@@ -11,6 +11,7 @@
         <script type="module" src="js/panolens.min.js"></script>
         <script type="module" src="index.js"></script>
         <script src="js/music.js"></script>
+        <script src="js/functions.js"></script>
         <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css" />
         <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lamejs/1.2.0/lame.min.js"></script>
@@ -71,8 +72,10 @@
             <div class="card" style="width: 38rem">
                 <div class="card-body">
                   <h5 class="card-title">Get Started</h5>
-                  <p class="card-text">Journal</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <form>
+                    <textarea id="journal" name="journal" rows="23" cols="65" placeholder="Begin journaling here ..."></textarea>
+                  </form>  
+                  <button onclick = "setJournal()" class="btn btn-primary" >Generate</a>
                 </div>
             </div>
         </div>

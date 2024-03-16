@@ -89,8 +89,29 @@ body {
 }
 
 .card-container .card {
+  font-family: HandMarker;
   position: relative;
   height: 45rem;
   top: 5rem;
   left: 5rem;
 }
+
+textarea {
+  resize: none;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 1rem;
+  border: 0.3rem solid #ccc;
+  transition: 0.5s;
+  outline: none;
+}
+
+textarea:focus {
+  border: 0.3rem solid #555;
+  resize: none;
+}
+
+@font-face { 
+  font-family: HandMarker; src: url(
+    'media/His\ Heart\ is\ Mine.ttf'); 
+} 

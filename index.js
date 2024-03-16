@@ -1,7 +1,6 @@
 
 const panorama = new PANOLENS.ImagePanorama("media/image3.webp");
 const imageContainer = document.querySelector(".image-container");
-
 const viewer = new PANOLENS.Viewer({
   container: imageContainer,
   autoRotate: true,
@@ -12,9 +11,9 @@ const viewer = new PANOLENS.Viewer({
   autoRotateActivationDuration: 600,
   momentum: true,
 });
+let journal = "";
 
 viewer.disableControl();
-
 viewer.add(panorama);
 
 
