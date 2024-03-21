@@ -1,23 +1,21 @@
 document.getElementById('generate').addEventListener('click', function() {
-  const journalText = document.getElementById('journal').value;
-
-  fetch('/api/chatGPT', {
+  fetch('/chatGPT', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ prompt: journalText })
+      body: JSON.stringify({ prompt: document.getElementById('journal').value })
   })
   .then(response => response.json())
   .then(data => {
-      console.log(data);
-      // Process the data received from the serverless function
-      // For example, you might want to display the generated image or the chat response
+      console.log(data.response);
+      // Process the response from the ChatGPT API
   })
   .catch(error => {
       console.error('Error:', error);
   });
 });
+
 
 /*
 var imageUrl;

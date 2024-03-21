@@ -1,3 +1,4 @@
+/*
 const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
@@ -19,3 +20,4 @@ module.exports = async (req, res) => {
 
     res.status(200).json({ response: data.choices[0].message.content });
 };
+*/
