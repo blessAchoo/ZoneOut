@@ -1,3 +1,4 @@
+/*
 document.getElementById('generate').addEventListener('click', function() {
   fetch('/chatGPT', {
       method: 'POST',
@@ -15,9 +16,9 @@ document.getElementById('generate').addEventListener('click', function() {
       console.error('Error:', error);
   });
 });
+*/
 
 
-/*
 var imageUrl;
 document.getElementById('generate').addEventListener('click', function() {
     var xhr = new XMLHttpRequest();
@@ -46,4 +47,4 @@ document.getElementById('generate').addEventListener('click', function() {
   });
   
   export { imageUrl };
-  */
+  

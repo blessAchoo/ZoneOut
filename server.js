@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+/*const fetch = require('node-fetch');
 
 app.post('/chatGPT', async (req, res) => {
     const prompt = req.body.prompt;
@@ -23,15 +23,15 @@ app.post('/chatGPT', async (req, res) => {
         res.status(500).json({ error: 'Internal Server Error' });
     }
 });
+*/
 
-/*
 import axios from 'axios';
 import express from 'express';
 import { OpenAI } from 'openai';
 import * as dotenv from 'dotenv';
 
 const app = express();
-app.use(express.static('public'));
+app.use(express.static('./'));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
@@ -125,4 +125,3 @@ app.get('/image-proxy', async (req, res) => {
 });
 //document.querySelector('button').addEventListener('click', main);
 
-*/

@@ -46,19 +46,3 @@ function startNewLens() {
 }
 window.startNewLens = startNewLens;
 
-fetch('/api/chatGPT', {
-  method: 'POST',
-  headers: {
-      'Content-Type': 'application/json'
-  },
-  body: JSON.stringify({ prompt: 'Hello, ChatGPT!' })
-})
-.then(response => response.json())
-.then(data => {
-  console.log(data.response);
-  // Process the response from the ChatGPT API
-})
-.catch(error => {
-  console.error('Error:', error);
-});
-
