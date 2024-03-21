@@ -1,24 +1,3 @@
-/*
-document.getElementById('generate').addEventListener('click', function() {
-  fetch('/chatGPT', {
-      method: 'POST',
-      headers: {
-          'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({ prompt: document.getElementById('journal').value })
-  })
-  .then(response => response.json())
-  .then(data => {
-      console.log(data.response);
-      // Process the response from the ChatGPT API
-  })
-  .catch(error => {
-      console.error('Error:', error);
-  });
-});
-*/
-
-
 var imageUrl;
 document.getElementById('generate').addEventListener('click', function() {
     var xhr = new XMLHttpRequest();
