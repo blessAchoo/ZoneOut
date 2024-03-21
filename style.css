@@ -7,6 +7,14 @@ body {
   height: 100rem;
 }
 
+div #loading-screen{
+  background-color:black;
+  color: white;
+  height:fit-content;
+  width:fit-content;
+  opacity:0%;
+}
+
 .main-container {
   height: 50rem;
   align-items: center;
