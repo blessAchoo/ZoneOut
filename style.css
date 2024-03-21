@@ -7,7 +7,7 @@ body {
   height: 100rem;
 }
 
-div #loading-screen{
+#loading-screen{
   background-color:black;
   color: white;
   height:fit-content;
