@@ -1,3 +1,4 @@
+/*
 import axios from 'axios';
 import express from 'express';
 import { OpenAI } from 'openai';
@@ -98,3 +99,4 @@ app.get('/image-proxy', async (req, res) => {
 });
 //document.querySelector('button').addEventListener('click', main);
 
+*/
