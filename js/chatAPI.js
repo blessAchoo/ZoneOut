@@ -1,5 +1,10 @@
 var imageUrl;
 document.getElementById('generate').addEventListener('click', function() {
+  /*
+  const element = document.getElementById("generate");
+  element.innerHTML = "Generating...";
+  element.style.opacity = "0.9";
+  */
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '/chatGPT', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
@@ -7,7 +12,6 @@ document.getElementById('generate').addEventListener('click', function() {
       if (xhr.readyState == 4 && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
         //document.getElementById('chatGPTResponse').value = response.response;
-
         // Handle the image URL
         imageUrl = response.imageUrl;
         var img = document.createElement('img');
