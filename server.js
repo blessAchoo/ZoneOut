@@ -2,7 +2,7 @@ import axios from 'axios';
 import express from 'express';
 import { OpenAI } from 'openai';
 import * as dotenv from 'dotenv';
-/*
+
 const app = express();
 app.use(express.static('public'));
 
@@ -12,7 +12,7 @@ app.listen(PORT, () => {
 });
 
 dotenv.config();
-*/
+
 const openai = new OpenAI();
 
 async function createAssistant() {
