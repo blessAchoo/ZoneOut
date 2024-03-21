@@ -3,11 +3,11 @@ const fetch = require('node-fetch');
 module.exports = async (req, res) => {
     const prompt = req.body.prompt;
 
-    const response = await fetch('https://api.openai.com/v1/assistants/YOUR_ASSISTANT_ID/messages', {
+    const response = await fetch('https://api.openai.com/v1/assistants/asst_b5kpzgwNTiw8TLMEbbIlxImL/messages', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer ${process.env.CHATGPT_API_KEY}`
+            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
         },
         body: JSON.stringify({
             prompt: prompt,
