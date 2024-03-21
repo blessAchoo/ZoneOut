@@ -1,10 +1,14 @@
 var imageUrl;
 document.getElementById('generate').addEventListener('click', function() {
+  const element = document.getElementById("loading-screen");
+  element.style.transiton = "opacity 1.5s";
+  element.style.opacity = "1";
   /*
   const element = document.getElementById("generate");
   element.innerHTML = "Generating...";
   element.style.opacity = "0.9";
   */
+  
     var xhr = new XMLHttpRequest();
     xhr.open('POST', '/chatGPT', true);
     xhr.setRequestHeader('Content-Type', 'application/json');
