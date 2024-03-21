@@ -5,6 +5,7 @@ html {
   .body {
     background-color: black;
     height: 10px;
+    opacity: 100%;
   }
   
   .main-container {
