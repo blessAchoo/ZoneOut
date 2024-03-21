@@ -1,3 +1,25 @@
+document.getElementById('generate').addEventListener('click', function() {
+  const journalText = document.getElementById('journal').value;
+
+  fetch('/api/chatGPT', {
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ prompt: journalText })
+  })
+  .then(response => response.json())
+  .then(data => {
+      console.log(data);
+      // Process the data received from the serverless function
+      // For example, you might want to display the generated image or the chat response
+  })
+  .catch(error => {
+      console.error('Error:', error);
+  });
+});
+
+/*
 var imageUrl;
 document.getElementById('generate').addEventListener('click', function() {
     var xhr = new XMLHttpRequest();
@@ -26,3 +48,4 @@ document.getElementById('generate').addEventListener('click', function() {
   });
   
   export { imageUrl };
+  */
